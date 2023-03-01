@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <!-- 스크립트 명이 script.js인 경우, 실행하지 않는다. -->
+    <head>
+        <meta charset="utf-8"/>
+        <!-- 다음은 실행하지 않음 -->
+        <script src="script.js"></script>
+        <!-- 다음은 실행함 -->
+        <script src="scripts/alert.js"></script>
+    </head>
+
+    <body>
+        <a href="./index.html">메인으로</a>
+        <!-- 다음은 실행함 -->
+        <script>
+            alert("Hello, World! - inner");
+        </script>
+        <!-- 다음은 실행함 -->
+        <script src="scripts/alert.js"></script>
+        <!-- 다음은 실행하지 않음 -->
+        <script src="script.js"></script>
+    </body>
+</html>
